@@ -8,11 +8,17 @@
 // @grant        none
 // ==/UserScript==
 
+//
+// Google Translate Link
+//
 function en_to_jp_google_translate(sentence)
 {
     return  'https://translate.google.com/?hl=ja#en/ja/' + escape(sentence);
 }
 
+//
+// Google Translate LinkをHakcer Newsに埋め込む
+//
 function translate_link_to_hacker_news()
 {
     var archive_title_elements   = document.getElementsByClassName('athing');
