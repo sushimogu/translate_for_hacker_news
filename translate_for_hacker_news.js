@@ -26,13 +26,13 @@ function translate_link_to_hacker_news()
 
     for(var i = 0; i < archive_title_elements.length; i++)
     {
-        var archive_title = archive_title_elements[i].outerText;
-        archive_title = archive_title.replace(/^[0-9]+\.\t\r?\n/g,  '');
+        var archive_title = archive_title_elements[i].innerText;
+        archive_title = archive_title.replace(/^[0-9]+\.\t\n\t?/g, '');
         archive_title = archive_title.replace(/\([a-zA-Z]+\.com\)/g, '');
 
         var google_translate_link = en_to_jp_google_translate(archive_title);
 
-        var a_link_for_append=document.createElement('a');
+        var a_link_for_append = document.createElement('a');
         a_link_for_append.setAttribute('href', google_translate_link);
         a_link_for_append.setAttribute('target', '_blank');
         a_link_for_append.style.cssText = 'color: #828282;'        +
