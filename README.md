@@ -7,8 +7,9 @@ HackerNewsの記事タイトルをGoogleTranslateで翻訳するためのリン�
 ### 使い方
 1. Tampermonkeyをインストール  
 2. Scriptをコピーアンドペースト  
-3. 右下のtranslateのリンクをクリック  
-4. *Enjoy Hacker News!*  
+3. [HackerNews](https://news.ycombinator.com/)にアクセスする
+4. 右下のtranslateリンクをClick 
+5. *Enjoy Hacker News!*  
 
 ### 必要なブラウザプラグライン
 [Tampermonkey](http://tampermonkey.net/)
